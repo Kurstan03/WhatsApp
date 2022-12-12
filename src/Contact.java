@@ -51,7 +51,7 @@ public class Contact {
 
     @Override
     public String toString() {
-        return  name + " (" + phoneNumber + ")" +
+        return  "\n" + name + " (" + phoneNumber + ")" +
                 "\n  чат: ";
     }
 }

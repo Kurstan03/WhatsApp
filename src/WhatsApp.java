@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Stack;
 
 public class WhatsApp {
     private String phoneNumber;
@@ -18,7 +17,7 @@ public class WhatsApp {
 
     private List<Group> groups;
 
-    public void addGroups(Group group){
+    public void addGroup(Group group){
         if (groups == null){
             groups = new ArrayList<>();
         }
@@ -83,13 +82,9 @@ public class WhatsApp {
 
     @Override
     public String toString() {
-        return "WhatsApp{" +
-                "phoneNumber='" + phoneNumber + '\'' +
-                ", password='" + password + '\'' +
-                ", userName='" + userName + '\'' +
-                ", status=" + status +
-                ", contacts=" + contacts +
-                ", groups=" + groups +
-                '}';
+        return  userName +
+                "\n(" + phoneNumber +
+                ")\npassword: " + password +
+                "\nstatus: " + status ;
     }
 }
